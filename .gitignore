@@ -1,9 +1,13 @@
-bin
-.classpath
-.settings
+# Directorios de compilación y caché de Bonita / Eclipse
+bin/
 target/
-.flattened-pom.xml
-dependency-reduced-pom.xml
-pom.xml.versionsBackup
-node/
-node_modules/
+*.log
+.cache/
+.settings/
+.project
+.classpath
+
+# Archivos de usuario y metadatos locales
+*.bak
+historical/
+workspace/
