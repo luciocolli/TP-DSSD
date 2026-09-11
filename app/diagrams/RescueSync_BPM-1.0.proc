@@ -246,7 +246,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_FnCYkKZIEfGXZucFURQGfA" name="Revisar Informacion" target="_wxtMoKZAEfGXZucFURQGfA" source="_vO4q0KZHEfGXZucFURQGfA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_FnC_oKZIEfGXZucFURQGfA"/>
         <condition xmi:type="expression:Expression" xmi:id="_FnDmsKZIEfGXZucFURQGfA" name="newScript()" content="opcionElegida == &quot;revisarInformacion&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_5mfusKu0EfGXZucFURQGfA" documentation="opcion que elige el Coordinador" name="opcionElegida" dataType="_Q6IGUaY3EfGXZucFURQGfA"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_yF4rsK4fEfGXZucFURQGfA" documentation="opcion que elige el Coordinador" name="opcionElegida" dataType="_Q6IGUaY3EfGXZucFURQGfA"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_04DA0KZJEfGXZucFURQGfA" target="_yiNK0KZJEfGXZucFURQGfA" source="_mho78KZJEfGXZucFURQGfA">
@@ -277,13 +277,17 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_fXo-wa1tEfGXZucFURQGfA"/>
         <condition xmi:type="expression:Expression" xmi:id="_fXo-wq1tEfGXZucFURQGfA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_m6pdMK1tEfGXZucFURQGfA" name="se cubren lotes" target="_B-ZogKZJEfGXZucFURQGfA" source="_EhLrIKZFEfGXZucFURQGfA">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_m6pdMK1tEfGXZucFURQGfA" name="Se cubren lotes" target="_B-ZogKZJEfGXZucFURQGfA" source="_EhLrIKZFEfGXZucFURQGfA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_m6pdMa1tEfGXZucFURQGfA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_m6pdMq1tEfGXZucFURQGfA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_m6pdMq1tEfGXZucFURQGfA" name="newScript()" content="lotesCubiertos == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_14VCkK4fEfGXZucFURQGfA" name="lotesCubiertos" dataType="_Q6IGTKY3EfGXZucFURQGfA"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_yErssK1tEfGXZucFURQGfA" name="Continuar con cobertura parcial" target="_B-ZogKZJEfGXZucFURQGfA" source="_vO4q0KZHEfGXZucFURQGfA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yErssa1tEfGXZucFURQGfA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_yErssq1tEfGXZucFURQGfA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_yErssq1tEfGXZucFURQGfA" name="newScript()" content="opcionElegida == &quot;coberturaParcial&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_0Mfy4K4fEfGXZucFURQGfA" documentation="opcion que elige el Coordinador" name="opcionElegida" dataType="_Q6IGUaY3EfGXZucFURQGfA"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_3dtm4K1tEfGXZucFURQGfA" target="_EhLrIKZFEfGXZucFURQGfA" source="_hdcewKZIEfGXZucFURQGfA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_3duN8K1tEfGXZucFURQGfA"/>
